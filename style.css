@@ -1,0 +1,25 @@
+:root { --accent: #B7735F; --fg: #2a2522; --sub: #6e6a66; --bg: #fbf8f4; --card: #ffffff; --line: #ece5dd; }
+@media (prefers-color-scheme: dark) {
+  :root { --accent: #C3826D; --fg: #f2eee9; --sub: #a59f99; --bg: #1c1a19; --card: #262321; --line: #3a3532; }
+}
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--bg); color: var(--fg); font: 16px/1.75 -apple-system, BlinkMacSystemFont, "Hiragino Sans", "Noto Sans JP", sans-serif; }
+main { max-width: 760px; margin: 0 auto; padding: 40px 16px 64px; }
+header.site { display: flex; align-items: center; gap: 14px; margin-bottom: 28px; }
+header.site img { width: 56px; height: 56px; border-radius: 13px; }
+header.site a { color: inherit; text-decoration: none; }
+header.site .name { font-size: 22px; font-weight: 700; letter-spacing: .02em; }
+nav { margin-left: auto; display: flex; gap: 16px; font-size: 14px; }
+nav a { color: var(--sub); text-decoration: none; }
+nav a:hover, a { color: var(--accent); }
+h1 { font-size: 28px; line-height: 1.35; margin: 8px 0 12px; }
+h2 { font-size: 19px; margin: 36px 0 8px; padding-top: 8px; border-top: 1px solid var(--line); }
+h3 { font-size: 16px; margin: 20px 0 4px; }
+.lead { color: var(--sub); font-size: 17px; }
+.card { background: var(--card); border: 1px solid var(--line); border-radius: 14px; padding: 18px 20px; margin: 16px 0; }
+ul { padding-left: 1.3em; }
+li { margin: 4px 0; }
+.lang { margin-top: 56px; padding-top: 8px; border-top: 2px solid var(--line); }
+footer { color: var(--sub); font-size: 13px; margin-top: 48px; }
+.todo { background: #fff2c6; color: #5a4600; padding: 0 4px; border-radius: 4px; }
+@media (max-width: 520px) { header.site { flex-wrap: wrap; } nav { margin-left: 0; width: 100%; } h1 { font-size: 24px; } }
