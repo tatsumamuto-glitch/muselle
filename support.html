@@ -27,7 +27,7 @@
   <h2>よくある質問</h2>
 
   <h3>ライブラリとは何ですか?</h3>
-  <p>保存した画像・メモ・タグ・フォルダをまとめて入れておく「棚」です。Mac では 1 つのファイル(名前の末尾が <code>.muselle</code>)に見えます。iCloud Drive に置くと、同じ Apple ID の Mac・iPhone・iPad で同じライブラリを使えます。</p>
+  <p>保存した画像・メモ・タグ・フォルダをまとめて入れておく「棚」です。1.1 からは普通のフォルダになりました。iCloud Drive に置くと、同じ Apple ID の Mac・iPhone・iPad で同じライブラリを使えます。1.0 で作ったライブラリ(名前の末尾が <code>.muselle</code>)は、Mac で一度開くと新しい形のフォルダへ自動で移します(元のものはゴミ箱に入ります)。移したあと、iPhone・iPad では「ライブラリを開く」で新しいフォルダを選んでください。</p>
 
   <h3>Eagle から移れますか?</h3>
   <p>はい。Mac 版のメニュー「ファイル」→「Eagle ライブラリから読み込み…」で、Eagle のライブラリ(<code>.library</code>)を選んでください。画像・フォルダ・タグ・メモ・評価などを読み込みます。元の Eagle ライブラリは変更しません。</p>
@@ -37,14 +37,60 @@
     <li><strong>Chrome</strong>: Muselle の拡張機能を入れると、画像の右クリック、ツールバーのボタン(ページ内の画像を選んでまとめて保存)、画像のドラッグ(保存先フォルダを選べます)で保存できます。</li>
     <li><strong>Safari</strong>: Safari の「設定」→「機能拡張」で Muselle をオンにしてください。</li>
     <li><strong>iPhone / iPad</strong>: 共有ボタンから「Muselle」を選びます。</li>
+    <li><strong>Mac のほかのアプリ</strong>: 共有メニューから「Muselle」を選びます(1.1 以降)。</li>
   </ul>
   <p>Mac で Muselle が起動していてライブラリが開いていれば、保存しても Muselle は前に出ず、ブラウザのまま作業を続けられます。</p>
+
+  <h3>画面を撮って保存するには?(Mac・1.1 以降)</h3>
+  <p>メニューバーのカメラのアイコンから「範囲を選んで撮る」「ウインドウを撮る」「画面全体を撮る」「5 秒後に範囲を撮る」を選びます。どのアプリを使っていてもショートカットで撮れます(最初は ⌥⇧A 範囲・⌥⇧W ウインドウ・⌥⇧F 画面全体)。撮った直後の小さな窓で、フォルダ・タグ・メモを付けて保存できます。ショートカットとアイコンの表示は Muselle の「設定」(⌘,)の「キャプチャ」で変えられます。初めて撮るときは、「システム設定」→「プライバシーとセキュリティ」→「画面収録とシステムオーディオ録音」で Muselle を許可してください。</p>
+  <p>ブラウザ(Safari・Chrome・Edge・Brave・Arc・Vivaldi)のページを撮ると、そのページの URL も画像の「取得元 URL」に入ります。ブラウザごとに初回だけ「Muselle が〜を操作しようとしています」と確認が出るので、「許可」を押してください。許可しなかったときは URL なしで保存します。同じブラウザでウインドウをいくつも開いていて、どれを撮ったか見分けられないときや、シークレットウインドウ(Chrome など)では URL を入れません。</p>
+  <p>「画面収録の許可が必要です」と出続けるときは、Muselle を終了し、「画面収録とシステムオーディオ録音」の一覧で Muselle を選んで「−」で消してから、もう一度撮って許可し直してください。</p>
+
+  <h3>外付けディスクのフォルダをコピーせずに登録するには?(Mac・1.1 以降)</h3>
+  <p>「ファイル」→「フォルダを追加…」で「コピーせずに元の場所を参照する(外付けディスク向け)」を選んでからフォルダを選びます。Mac の容量を使わずに一覧・検索でき、元のファイルはそのままです。ディスクを外しているあいだは、作っておいた見本の画像を表示します。iPhone・iPad でも見本の画像で見られます。登録したフォルダは「ファイル」→「参照しているフォルダ…」で確かめられます。</p>
+
+  <h3>iPhone で撮った写真を Mac に取り込むには?(Mac・1.1 以降)</h3>
+  <p>「ファイル」→「iPhone または iPad から読み込む」で、近くの iPhone・iPad で写真を撮るか書類をスキャンすると、そのまま Muselle に入ります。</p>
+
+  <h3>カメラで撮って保存するには?(iPhone・iPad・1.1 以降)</h3>
+  <p>右上の「+」→「カメラで撮る」を選びます。続けて何枚も撮れ、開いているフォルダに JPEG で入ります。</p>
+
+  <h3>ホーム画面のウィジェット(iPhone・iPad・1.1 以降)</h3>
+  <p>ホーム画面を長押しして「編集」→「ウィジェットを追加」から Muselle を選びます。「今日の1枚」「お気に入りのボード」「最近追加した画像」の 3 種類があり、長押しして「ウィジェットを編集」で、見せるフォルダやボードを選べます。</p>
+
+  <h3>Muselle の画像をほかのアプリで使うには?(Mac・1.1 以降)</h3>
+  <p>グリッドの画像を、Finder や Photoshop、ブラウザ(Google ドライブなど)へドラッグしてください。複数選んでまとめてドラッグもできます。PNG・JPEG・GIF・PSD・PDF・動画は元のファイルのまま、WebP や HEIC など使えないアプリがある形式は JPEG にして渡します(透明な部分は白になります)。いつも元のファイルのまま渡したいときは、「設定」(⌘,)の「一般」で選べます。</p>
+
+  <h3>写っているものや文字で探すには?(1.1 以降)</h3>
+  <p>検索欄に「猫」「ジュエリー」「空」のように入力すると、それが写っている画像が見つかります。画像の中の文字(日本語・英語)でも探せます。画像を選ぶと、情報欄に「写っているもの」と「画像の中の文字」が出て、写っているものを押すとタグとして付けられます。読み取りは Mac・iPhone・iPad の中だけで行い、外へは送りません。取り込んでから読み取りが終わるまで、少し時間がかかります(省電力モードの間は休みます)。</p>
+
+  <h3>似ている画像を探すには?(1.1 以降)</h3>
+  <p>画像を右クリック(iPhone・iPad は長押し)して「似ている画像を探す」を選ぶと、雰囲気や構図の近い順に並びます。元に戻すときは、上の帯の「元の一覧に戻る」を押してください。</p>
+
+  <h3>決めたフォルダから自動で取り込むには?(Mac・1.1 以降)</h3>
+  <p>「設定」(⌘,)の「自動取り込み」で「フォルダを追加…」を押し、ダウンロードなどのフォルダを選びます。追加したあとにそのフォルダへ入ったファイルが、開いているライブラリに自動で取り込まれます。元のファイルはそのまま残ります。取り込み先のフォルダはライブラリごとに選べます。</p>
+
+  <h3>動画や PDF は見られますか?(1.1 以降)</h3>
+  <p>はい。動画・PDF・PSD などは一覧に中身の絵が出て、大きく表示すると動画は再生、PDF はページをめくって見られます。写真アプリから動画やフルサイズの写真をドラッグして取り込むこともできます(Mac)。</p>
+
+  <h3>ムードボードを作るには?(1.1 以降)</h3>
+  <p>サイドバーの「ボード」の「+」で新しいボードを作り、一覧の画像を右クリック(iPad は長押し)して「ボードに追加」を選びます。ボードの中では画像・メモ・色見本を動かせ、選ぶと出る枠の右下の丸で大きさ、上の丸で向きを変えられます。右クリックで「◎採用」「×見送り」の印を付け、「採用だけ表示」で見比べられます。枠(正方形・4:5・9:16・A4 など)と背景を選んで、PNG・JPEG・PDF に書き出せます。⌘(または ⇧)を押しながらクリックすると複数選べ、空いたところをドラッグして囲んでも選べます(⌘A ですべて)。選んだものはまとめて動かしたり、印を付けたり、外したりできます。iPad は上の「複数選択」をオンにします。Mac と iPad で作成・編集でき、iPhone では見るだけです。ボードを消しても画像はライブラリに残ります。</p>
+
+
+  <h3>画像をまとめて書き出すには?(1.1 以降)</h3>
+  <p>画像を選んで右クリック(iPhone・iPad は長押し)し、「画像を書き出し…」を選びます。Instagram 用の正方形 1080・ショップ用・元のままから選び、正方形にするときは余白を足すか切り抜くかを選べます。形式(JPEG・PNG・元のまま)と番号付きの名前も選べ、よく使う設定は保存できます。「透かしを入れる」をオンにすると、ショップ名などの文字かロゴ画像を、右下・左下・右上・左上・中央・下の中央・全体に並べる から選んだ位置に入れられます。大きさと濃さも変えられ、見本で仕上がりを確かめられます。透かしは書き出す画像にだけ入り、元の画像は変わりません。</p>
+
+  <h3>品番や価格を入れて、ショップ用の CSV にするには?(1.1 以降・Muselle Pro)</h3>
+  <p>「設定」の「ショップ向けの機能を使う」をオンにすると、情報パネルに「商品の情報」(品番・商品名・価格・素材・商品説明)が出ます。複数の画像を選んで入れると、全部に同じ値が入ります。項目は「項目を編集…」で追加・名前の変更・並べ替えができます。入れた値で探したり、並び替え(価格の安い順など)をしたりできます。画像を選んで右クリック(iPhone・iPad は書き出しのボタン)から「商品の一覧を書き出す…」を選ぶと、同じ品番の画像を 1 つの商品にまとめて書き出せます。BASE は CSV と画像の ZIP の組(画像は長い辺 1080px の JPEG。10MB に収まるよう何組かに分けます)を「CSV 商品管理」でアップロードします。商品は非公開・在庫 0 で登録されるので、確かめてから公開してください。Shopify は「商品をインポート」で読み込むと下書きとして登録されます(画像はあとで Shopify で追加します)。表計算用の CSV は Excel や Numbers で開けます。</p>
+
+  <h3>写っているものを自動でタグにするには?(1.1 以降)</h3>
+  <p>「設定」の「写っているものを自動でタグにする」をオンにすると、読み取りが終わった画像に、写っているもの(猫・ジュエリーなど)を 3 つまでタグとして付けます。「今ある画像にも付ける」で、すでにある画像にも付けられます。付いたタグはふつうのタグと同じように外せます。</p>
 
   <h3>拡張機能でフォルダの一覧が出ません</h3>
   <p>Muselle を起動して、ライブラリを開いてください。拡張機能を入れたり更新したりした直後は、開いていたページを再読み込みすると表示されます。ドラッグ時の表示は、ツールバーの Muselle ボタンを押した画面の一番下で入り切りできます。</p>
 
   <h3>iPhone に画像が出てこない</h3>
-  <p>iCloud Drive の同期には少し時間がかかることがあります。Wi-Fi につながっているか、「設定」→ Apple ID →「iCloud」→「iCloud Drive」がオンになっているかをご確認ください。よく見るフォルダは、長押しして「このデバイスに保持」をオンにすると、通信がなくても開けます。</p>
+  <p>iCloud Drive の同期には少し時間がかかることがあります。Wi-Fi につながっているか、「設定」→ Apple ID →「iCloud」→「iCloud Drive」がオンになっているかをご確認ください。よく見るフォルダは、長押しして「このデバイスに保持」をオンにすると、通信がなくても開けます。1.1 からは画像が 1 枚ずつ届くので、初めて開いたときはまだ届いていない画像が少しずつ表示されます。</p>
 
   <h3>消した画像を元に戻したい</h3>
   <p>削除した画像は「ゴミ箱」に 30 日間残ります。ゴミ箱から選んで「戻す」を押してください。</p>
@@ -53,21 +99,52 @@
   <p>サイトによっては、アプリからの画像の取得を断ることがあります。そのときは画像の代わりにページへのリンク(ブックマーク)として残します。</p>
 
   <h3>Muselle Pro について</h3>
-  <p>Muselle は 300 枚まで無料で使えます。Muselle Pro(月額・年額・買い切り)にすると、保存できる数の上限がなくなります。同じ Apple アカウントなら、Mac・iPhone・iPad のどれで購入しても、すべての端末で使えます。端末を替えたときは、Muselle Pro の画面の「購入を復元」を押してください。月額・年額の解約は、App Store のアカウント設定(「サブスクリプション」)からいつでもできます。</p>
+  <p>Muselle は、すべてのライブラリを合わせて 300 枚まで無料で使えます。Muselle Pro(月額・年額・買い切り)にすると、保存できる数の上限がなくなります。同じ Apple アカウントなら、Mac・iPhone・iPad のどれで購入しても、すべての端末で使えます。端末を替えたときは、Muselle Pro の画面の「購入を復元」を押してください。月額・年額は、初めての方は最初の 2 週間が無料です(無料期間中に解約すれば料金はかかりません)。月額・年額の解約は、App Store のアカウント設定(「サブスクリプション」)からいつでもできます。</p>
 
   <section class="lang" lang="en">
     <h1>Support</h1>
     <p>Contact: <a href="mailto:tatsuma.muto@info.sunnyside-fashion.com">tatsuma.muto@info.sunnyside-fashion.com</a>. Please include your device, OS version, Muselle version and what happened.</p>
     <h3>What is a library?</h3>
-    <p>A single <code>.muselle</code> package that holds your images, notes, tags and folders. Put it in iCloud Drive to use it on all your Macs, iPhones and iPads.</p>
+    <p>A folder that holds your images, notes, tags and folders (a regular folder from version 1.1). Put it in iCloud Drive to use it on all your Macs, iPhones and iPads. A library made with version 1.0 (ending in <code>.muselle</code>) is moved to the new format automatically the first time you open it on a Mac; the old one goes to the Trash. On iPhone and iPad, then choose Open Library and pick the new folder.</p>
     <h3>Can I move from Eagle?</h3>
     <p>Yes. On the Mac choose File → Import from Eagle Library… and pick your <code>.library</code>. Your Eagle library is not changed.</p>
     <h3>Saving from the browser</h3>
-    <p>Install the Muselle extension for Chrome (right-click an image, use the toolbar button to save several images, or drag an image onto a folder), turn it on in Safari Settings → Extensions, or use the Share button on iPhone and iPad.</p>
+    <p>Install the Muselle extension for Chrome (right-click an image, use the toolbar button to save several images, or drag an image onto a folder), turn it on in Safari Settings → Extensions, or use the Share button on iPhone and iPad. From version 1.1, Muselle also appears in the Share menu of other Mac apps.</p>
+    <h3>Capturing the screen (Mac, 1.1 or later)</h3>
+    <p>Click the camera icon in the menu bar and choose an area, a window, the whole screen or an area after 5 seconds. Shortcuts work from any app (by default ⌥⇧A area, ⌥⇧W window, ⌥⇧F screen). A small window lets you pick a folder, tags and a note before saving. Change the shortcuts or hide the icon in Muselle Settings (⌘,) → Capture. The first time, allow Muselle in System Settings → Privacy &amp; Security → Screen &amp; System Audio Recording.</p>
+    <p>When you capture a page in Safari, Chrome, Edge, Brave, Arc or Vivaldi, its URL is saved as the image's Source URL. macOS asks once per browser whether Muselle may control it; choose Allow. If you don't, the image is saved without a URL. No URL is saved when several windows of the same browser are open and Muselle can't tell which one you captured, or for incognito windows in Chrome and similar browsers.</p>
+    <p>If Muselle keeps saying it needs screen recording permission, quit Muselle, select it in the Screen &amp; System Audio Recording list, remove it with −, then capture again and allow it.</p>
+    <h3>Adding folders from an external drive without copying (Mac, 1.1 or later)</h3>
+    <p>Choose File → Add Folders…, select "Link to files in place instead of copying (for external drives)", then pick the folder. You can browse and search without using space on your Mac, and the original files stay where they are. While the drive is disconnected, Muselle shows preview images, and iPhone and iPad show them too.</p>
+    <h3>Importing photos from your iPhone (Mac, 1.1 or later)</h3>
+    <p>Choose File → Import from iPhone or iPad to take a photo or scan a document with a nearby iPhone or iPad and add it straight to Muselle.</p>
+    <h3>Taking photos (iPhone and iPad, 1.1 or later)</h3>
+    <p>Tap + → Take Photo. Take as many as you like in a row; they are saved as JPEG into the open folder.</p>
+    <h3>Home Screen widgets (iPhone and iPad, 1.1 or later)</h3>
+    <p>Touch and hold the Home Screen, choose Edit → Add Widget and pick Muselle. Choose from Photo of the Day, Favorite Board and Recently Added; touch and hold a widget and choose Edit Widget to pick a folder or board.</p>
+    <h3>Using images in other apps (Mac, 1.1 or later)</h3>
+    <p>Drag images from the grid to Finder, Photoshop or a browser (for example Google Drive); you can drag several at once. PNG, JPEG, GIF, PSD, PDF and videos are passed as the original file; formats some apps can't open, such as WebP and HEIC, become JPEG (transparent areas turn white). To always pass the original file, choose it in Settings (⌘,) → General.</p>
+    <h3>Searching by what's in an image (1.1 or later)</h3>
+    <p>Type words such as "cat", "jewelry" or "sky" in the search field to find images that show them. Text inside images (Japanese and English) is searchable too. Select an image to see what's in it and its text in the inspector; click an item to add it as a tag. Everything is read on your Mac, iPhone or iPad and never sent anywhere. Reading new images takes a little while (it pauses in Low Power Mode).</p>
+    <h3>Finding similar images (1.1 or later)</h3>
+    <p>Right-click (or touch and hold) an image and choose Find Similar Images. Choose Back to the List in the banner to return.</p>
+    <h3>Importing from a folder automatically (Mac, 1.1 or later)</h3>
+    <p>In Settings (⌘,) → Auto Import, choose Add Folder… and pick a folder such as Downloads. Files that arrive there afterwards are imported into the open library; the original files stay where they are. You can choose the destination folder for each library.</p>
+    <h3>Videos and PDFs (1.1 or later)</h3>
+    <p>Videos, PDFs, PSDs and more show previews in the grid. Open them to play videos or page through PDFs. On the Mac you can also drag videos and full-size photos straight from the Photos app.</p>
+    <h3>Moodboards (1.1 or later)</h3>
+    <p>Choose + next to Boards in the sidebar to create a board, then right-click (or touch and hold on iPad) images in the grid and choose Add to Board. On a board, move images, notes and color swatches; select one and use the bottom-right circle to resize it or the top circle to rotate it. Right-click to mark picks ◎ or passes ×, and show only picks to compare. Choose a frame (square, 4:5, 9:16, A4 and more) and background, then export as PNG, JPEG or PDF. ⌘-click (or Shift-click) to select several, or drag on an empty area to draw a box around them (⌘A selects everything); then move, mark or remove them together. On iPad, turn on Select Multiple at the top. Create and edit boards on Mac and iPad; iPhone shows them. Deleting a board keeps its images in your library.</p>
+    <h3>Exporting many images at once (1.1 or later)</h3>
+    <p>Select images, right-click (or touch and hold) and choose Export Images…. Pick a 1080 square for Instagram, a shop size or the original size; for squares, choose whether to add margins or crop. Choose the format (JPEG, PNG or original) and numbered names, and save the settings you use often. Turn on Add a Watermark to put your shop name or a logo image in a corner, the center, the bottom center or tiled across the image, and adjust its size and opacity while you watch the preview. Only the exported images get the watermark; your originals stay as they are.</p>
+
+    <h3>How do I add SKUs and prices and export a CSV file for my shop? (1.1 and later, Muselle Pro)</h3>
+    <p>Turn on Use Shop Features in Settings. The inspector then shows Product Info (SKU, product name, price, material and description). Select several images to give them all the same value. Use Edit Fields… to add, rename and reorder fields. You can search by these values and sort by them (for example, price from lowest). Select images, right-click (or use the export button on iPhone and iPad) and choose Export Product List…; images with the same SKU become one product. For BASE, upload each CSV file with its ZIP of images (JPEG, 1080 px on the long side, split into sets under 10 MB) in BASE's CSV product manager. Products are added unpublished with zero stock, so check them before publishing. For Shopify, import the CSV file to add the products as drafts, then add images in Shopify. The spreadsheet CSV opens in Excel or Numbers.</p>
+    <h3>Tagging images automatically (1.1 or later)</h3>
+    <p>Turn on the automatic tagging option in Settings to add up to three tags for what's in each image (such as cat or jewelry) once it has been read. You can also apply it to the images you already have. Remove these tags like any other tag.</p>
     <h3>Deleted something by mistake?</h3>
     <p>Deleted items stay in the Trash for 30 days. Select them there and choose Restore.</p>
     <h3>Muselle Pro</h3>
-    <p>Muselle is free for up to 300 items. Muselle Pro (monthly, yearly or one-time purchase) removes the limit on every Mac, iPhone and iPad signed in to the same Apple Account. On a new device, open Muselle Pro and choose Restore Purchases. You can cancel a subscription at any time in your App Store account settings (Subscriptions).</p>
+    <p>Muselle is free for up to 300 items across all your libraries. Muselle Pro (monthly, yearly or one-time purchase) removes the limit on every Mac, iPhone and iPad signed in to the same Apple Account. On a new device, open Muselle Pro and choose Restore Purchases. Monthly and yearly plans start with a two-week free trial for new subscribers (cancel during the trial and you won't be charged). You can cancel a subscription at any time in your App Store account settings (Subscriptions).</p>
   </section>
 
   <footer>© 2026 Muselle</footer>
